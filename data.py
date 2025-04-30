@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 def load_data():
-    df = pd.read_csv("dataset\covid_19_indonesia_time_series_all.csv")
+    df = pd.read_csv("covid_19_indonesia_time_series_all.csv")
     df =df[df['Location'] != 'Indonesia']
     return df
 
